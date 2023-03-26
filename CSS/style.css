@@ -1,3 +1,4 @@
+/* Example of using just elements for CSS */
 body{
     font-family:Arial, Helvetica, sans-serif;
     background-color:powderblue;
@@ -11,10 +12,15 @@ h2{
     text-align:center;
 }
 
+h3{
+    font-weight: 900;
+}
+
 p{
     text-align: center;
 }
 
+/* Example of using an ID for CSS */
 #navbar{
     background-color:honeydew;
     overflow:auto;
@@ -54,34 +60,20 @@ p{
 #machines ul{
     list-style:none;
     line-height:100px;
-    
+    background-color: white;
 }
 
-#machines .box-1{
-    border:2px solid black;
-    border-spacing: 25px;
+#machines li{
+    font-size: x-large;
 }
 
-#machines .box-2{
-    border:2px solid black;
+.bullet {
+    border-style:dotted;
+    border-width: 5px;
+    margin-bottom: 20px;
 }
 
-#machines .box-3{
-    border:2px solid black;
-}
-
-#machines .box-4{
-    border:2px solid black;
-}
-
-#machines .box-1 img{
-    
-}
-
-#machines .container li{
-    
-}
-
+/* Example using a class in CSS */
 .table-title{
     margin-top:50px;
     text-align: center;
@@ -111,3 +103,26 @@ th{
 .bottom-line{
     background-color:lightgoldenrodyellow;
 }
+
+form input{
+    margin-left:10px;
+}
+
+form input[type="text"]:hover{
+    background-color:steelblue;
+    color:black;
+}
+
+.contact {
+    margin-left:60px;
+}
+
+.button {
+    margin-top:20px;
+    margin-left:60px;
+}
+
+.button input[type="submit"]:hover{
+    background-color:steelblue;
+}
+
